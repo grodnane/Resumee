@@ -25,7 +25,8 @@ const styles = {
   
   export const layout = {
     navButtons: `flex flex-row space-between justify-center items-center whitespace-nowrap`,
-    
+    heroButton: `px-8 mt-6 py-2 border border-[#242424] rounded-full uppercase text-[10px] 
+    tracking-widest text-gray-400 transition-all hover:border-[#F7AB0A]/40`,
 
     section: `flex md:flex-row flex-col ${styles.paddingY}`,
     sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
