@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
 import styles from "@/styles/style";
+import About from "@/components/about/About";
+import Experience from "@/components/experience/Experience";
 
 export default function Home() {
   return (
@@ -15,16 +17,19 @@ export default function Home() {
       </Head>
 
       <Header />
-      <section id="Hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
 
       {/* about */}
-      <section>
+      <section id="about" className="snap-center">
         <About />
       </section>
 
       {/* experience */}
+      <section id="experience" className="snap-center">
+        <Experience />
+      </section>
       {/* skills */}
       {/* Projects */}
       {/* contact me */}

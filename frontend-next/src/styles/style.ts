@@ -6,9 +6,11 @@ const styles = {
     typewriter: "bold unrderline text-4xl ",
 
     heading2: " text-gray-900 font-semibold xs:text-[40px] text-[30px] text-gray-900 xs:leading-[76.8px] leading-[66.8px]",
+    heading4:"text-4xl font-semibold",
     paragraph: " font-normal text-dimWhite text-[18px] leading-[30.8px]",
-  
-    li:"flex justify-center items-center text-[20px] w-fit m-3 p-3",
+
+    ul:"flex flex-col justify-evenly items-center mt-6 px-4 text-xl list-disc",
+    li:"flex justify-center items-center text-[20px] w-fit m-1 p-1",
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
   
