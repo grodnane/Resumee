@@ -12,7 +12,7 @@ export default function Experience({}: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className={`h-screen relative flex justify-evenly items-center overflow-hidden flex-col text-left md:flex-row 
-      max-w-full px-10 mx-auto`}
+      max-w-full px-10 mx-auto `}
     >
       <h3
         className={`${styles.heading4} absolute  top-24 uppercase tracking-wide`}
@@ -20,7 +20,9 @@ export default function Experience({}: Props) {
         Experience
       </h3>
 
-      <div>
+      <div className="w-10/12 flex space-x-5 overflow-x-auto  p-10 snap-x snap-mandatory">
+        <ExperienceCard />
+        <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
       </div>

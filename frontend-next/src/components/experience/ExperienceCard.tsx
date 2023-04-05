@@ -7,16 +7,18 @@ type Props = {};
 
 export default function ExperienceCard({}: Props) {
   return (
-    <article className="flex">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[500px] snap-center bg-[#343434] mt-24 px-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <Image
-        className="relative mx-auto object-cover rounded-full h-52 w-52 "
+        className="relative mx-auto object-cover rounded-full h-28  w-28 mt-20"
         src={xel}
         alt="xel"
       />
       <div className="px-0 md:px-10">
-        <h4 className="font-ligth text-4xl">Self Thaught developer</h4>
-        <div className="flex space-x-2 my-2">tech</div>
-        <div className="flex justify-center items-center uppercase py-3">
+        <h4 className="font-ligth text-2xl px-4 md:text-xl">
+          Self Thaught developer
+        </h4>
+        <div className="flex space-x-2 my-2 justify-center">tech</div>
+        <div className="flex justify-center items-center uppercase py-2">
           started work at ... - Ended
         </div>
         <ul className={`${styles.ul}`}>

@@ -10,7 +10,7 @@ const styles = {
     paragraph: " font-normal text-dimWhite text-[18px] leading-[30.8px]",
 
     ul:"flex flex-col justify-evenly items-center mt-6 px-4 text-xl list-disc",
-    li:"flex justify-center items-center text-[20px] w-fit m-1 p-1",
+    li:" flex justify-center items-center text-[20px] w-fit  p-1",
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
   
