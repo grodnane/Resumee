@@ -15,7 +15,7 @@ export default function Experience({}: Props) {
       max-w-full px-10 mx-auto `}
     >
       <h3
-        className={`${styles.heading4} absolute  top-24 uppercase tracking-wide`}
+        className={`${styles.heading4} absolute  top-28 uppercase tracking-[14px] `}
       >
         Experience
       </h3>

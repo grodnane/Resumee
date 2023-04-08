@@ -14,16 +14,20 @@ export default function About({}: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="flex flex-col relative text-center md:text-left 
-    md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center h-screen "
+    md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center h-screen"
     >
-      <h3 className="absolute top-24 uppercase tracking-wide ">About</h3>
+      <h3
+        className={`${styles.heading4} absolute  top-24 uppercase tracking-[14px] `}
+      >
+        About
+      </h3>
 
       <Image
-        className="relative mx-auto object-cover rounded-full h-52 w-52 "
+        className="mt-24 relative mx-auto object-cover rounded-full h-52 w-52 "
         src={gr3}
         alt="Gustavo Rodñane"
       />
-      <div className="space-y-5 px-0 md:px-10">
+      <div className="space-y-5 px-0 md:px-10 mt-20">
         <h4 className={`${styles.heading4}`}>From Eldorado to the World</h4>
         <p className="px-4">
           My Name is Gustavo but you can call me Gus, Im from a little town in

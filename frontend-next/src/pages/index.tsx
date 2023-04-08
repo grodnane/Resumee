@@ -1,11 +1,11 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
+import styles from "@/styles/style";
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
-import styles from "@/styles/style";
 import About from "@/components/about/About";
 import Experience from "@/components/experience/Experience";
 import Skills from "@/components/skills/Skills";
+import Projects from "@/components/projects/Projects";
 
 export default function Home() {
   return (
@@ -35,7 +35,9 @@ export default function Home() {
       <section id="skills" className="snap-start">
         <Skills />
       </section>
-      {/* Projects */}
+      <section id="projects" className="snap-center">
+        <Projects />
+      </section>
       {/* contact me */}
     </div>
   );

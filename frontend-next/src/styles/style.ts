@@ -6,7 +6,7 @@ const styles = {
     typewriter: "bold unrderline text-4xl ",
 
     heading2: " text-gray-900 font-semibold xs:text-[40px] text-[30px] text-gray-900 xs:leading-[76.8px] leading-[66.8px]",
-    heading4:"text-4xl font-semibold",
+    heading4:"text-4xl font-semibold text-gray-500",
     paragraph: " font-normal text-dimWhite text-[18px] leading-[30.8px]",
 
     ul:"flex flex-col justify-evenly items-center mt-6 px-4 text-xl list-disc",
