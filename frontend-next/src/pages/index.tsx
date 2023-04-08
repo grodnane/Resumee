@@ -6,6 +6,7 @@ import About from "@/components/about/About";
 import Experience from "@/components/experience/Experience";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
+import Contact from "@/components/contact/Contact";
 
 export default function Home() {
   return (
@@ -38,7 +39,9 @@ export default function Home() {
       <section id="projects" className="snap-center">
         <Projects />
       </section>
-      {/* contact me */}
+      <section id="contact" className="snap-center">
+        <Contact />
+      </section>
     </div>
   );
 }
