@@ -36,20 +36,7 @@ export default function Header({}: Props) {
           bgColor="gray"
         />
       </motion.div>
-      {/* <motion.div
-        initial={{ y: -200, opacity: 0, scale: 0 }}
-        animate={{ y: 0, scale: 1, opacity: 1 }}
-        transition={{ duration: 0.9 }}
-        className="rounded-full"
-      >
-        <Image
-          className="rounded-full"
-          alt="logo"
-          src="/../public/gr.png"
-          width={90}
-          height={80}
-        />
-      </motion.div> */}
+
       <motion.div
         initial={{ x: +500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -59,6 +46,7 @@ export default function Header({}: Props) {
         <SocialIcon
           className="cursor-pointer"
           network="email"
+          url="#contact"
           // fgColor="trasparent"
           bgColor="gray"
         />

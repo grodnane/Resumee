@@ -22,10 +22,10 @@ export default function Projects({}: Props) {
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative w-full flex  overflow-x-auto overflow-y-hidden snap-x snap-mandatory z-20">
         {projects.map((p, i) => (
           <div
-            className="w-screen flex-shrink-0 flex 
+            className="w-screen flex-shrink-0 hover:overscroll-contain flex 
         snap-center flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
             key={p}
           >
@@ -34,11 +34,11 @@ export default function Projects({}: Props) {
               <h4>
                 <span className="">
                   Case study {i + 1} of {projects.length}:
-                </span>{" "}
+                </span>
                 UPS clone
               </h4>
             </div>
-            <p className="text-lg text-center md:text-left ">
+            <p className="text-lg text-center  md:max-w-[700px] ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
               rerum eveniet accusamus fuga obcaecati, cupiditate iusto
               exercitationem ducimus placeat recusandae distinctio minima modi

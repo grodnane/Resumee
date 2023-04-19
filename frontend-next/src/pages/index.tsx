@@ -7,6 +7,9 @@ import Experience from "@/components/experience/Experience";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
 import Contact from "@/components/contact/Contact";
+import { h } from "../../public/index";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -39,9 +42,21 @@ export default function Home() {
       <section id="projects" className="snap-center">
         <Projects />
       </section>
-      <section id="contact" className="snap-center">
+      <section id="contact" className="snap-start">
         <Contact />
       </section>
+
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <Image
+              src={h}
+              alt="home"
+              className="w-16 h-16 rounded-full filter grayscale hover:grayscale-0 scale-75"
+            />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 }
