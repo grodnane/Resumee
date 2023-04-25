@@ -1,8 +1,7 @@
-import about from "./about";
-import contact from "./contact";
-import experiences from "./experiences";
-import skills from "./skills";
-import workexperience from "./workexperience";
+import pageInfo from './pageInfo'
+import experiences from './experiences'
+import skills from './skills'
+import social from './social'
+import projects from './projects'
 
-export const schemaTypes = [
-    about, contact, skills, experiences, workexperience ]
+export const schemaTypes = [pageInfo, skills, experiences, social, projects]

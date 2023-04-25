@@ -1,15 +1,15 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import styles from "../../styles/style";
 import { layout } from "../../styles/style";
 import Image from "next/image";
-import { gr0 } from "../../../public/index";
 import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
+import { PageInfo } from "../../../typings";
+import { urlForr } from "../../../sanity";
 
-type Props = {};
+type Props = { pageInfo: PageInfo };
 
-export default function Hero({}: Props) {
+export default function Hero({ pageInfo }: Props) {
   const [text, useText] = useTypewriter({
     words: ["Hi, I'm Gustavo", "Cofee enjoyer", "Let's work together"],
     loop: true,
@@ -21,12 +21,14 @@ export default function Hero({}: Props) {
       <BackgroundCircles />
       <Image
         className="relative mx-auto object-cover rounded-full h-52 w-52 "
-        src={gr0}
+        width={208}
+        height={208}
+        src={urlForr(pageInfo.heroImage.asset._ref).url()}
         alt="Gustavo Rodñane"
       />
       <div className="z-20 ">
-        <h2 className="text-md text-gray-400 pb-2 tracking-[9px] pt-4 underline-offset-2 underline underline-gray-300">
-          SOFTWARE ENGINEER
+        <h2 className="text-md text-gray-400 pb-2 tracking-[9px] pt-4 underline-offset-2 underline underline-gray-300 uppercase">
+          {pageInfo.role}
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10 z-2">
           <span>{text}</span>

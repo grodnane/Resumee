@@ -2,16 +2,11 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { PageInfo, Social } from "../../../typings";
 
-type Props = {};
+type Props = { pageInfo: PageInfo; social: Social[] };
 
-const urls: string[] = [
-  "https://www.linkedin.com/in/grodnane",
-  "https://github.com/grodnane",
-  "mailto:grodnane@gmail.com",
-];
-
-export default function Header({}: Props) {
+export default function Header({ social }: Props) {
   return (
     <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-5">
       <motion.div
@@ -20,21 +15,15 @@ export default function Header({}: Props) {
         transition={{ duration: 1.2 }}
         className="flex flex-row items-center gap-4"
       >
-        <SocialIcon
-          url="https://www.linkedin.com/in/grodnane"
-          fgColor="transparent"
-          bgColor="gray"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/grodnane"
-          fgColor="transparent"
-          bgColor="gray"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/grodnane"
-          fgColor="transparent"
-          bgColor="gray"
-        />
+        {social.map((s) => (
+          <SocialIcon
+            key={s._id}
+            url={s.url}
+            fgColor="transparent"
+            bgColor="gray"
+            target="blank"
+          />
+        ))}
       </motion.div>
 
       <motion.div
