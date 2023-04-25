@@ -1,8 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
-
 import styles from "@/styles/style";
 import { PageInfo } from "../../../typings";
 import { urlForr } from "../../../sanity";
