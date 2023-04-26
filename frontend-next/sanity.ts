@@ -1,5 +1,4 @@
 import { createClient } from "next-sanity";
-import createImageUrlBuilder from "@sanity/image-url";
 import imageUrlBuilder from "@sanity/image-url";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID; // "pv8y60vp"
