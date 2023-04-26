@@ -24,7 +24,7 @@ export default function Experience({ exp }: Props) {
 
       <div className="w-10/12 flex space-x-5 overflow-x-auto  p-10 snap-x snap-mandatory">
         {exp?.map((e) => (
-          <ExperienceCard key={e._id} exp={e} />
+          <ExperienceCard key={e?._id} exp={e} />
         ))}
       </div>
     </motion.div>

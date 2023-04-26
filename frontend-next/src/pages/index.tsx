@@ -59,7 +59,7 @@ export default function Home({ pageInfo, social, skills, proj, exp }: Props) {
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <Image
-              src={urlForr(pageInfo.toTopImg).url()}
+              src={urlForr(pageInfo?.toTopImg).url()}
               width={48}
               height={48}
               alt="home"

@@ -23,12 +23,12 @@ export default function Hero({ pageInfo }: Props) {
         className="relative mx-auto object-cover rounded-full h-52 w-52 "
         width={208}
         height={208}
-        src={urlForr(pageInfo.heroImage.asset._ref).url()}
+        src={urlForr(pageInfo?.heroImage.asset._ref).url()}
         alt="Gustavo Rodñane"
       />
       <div className="z-20 ">
         <h2 className="text-md text-gray-400 pb-2 tracking-[9px] pt-4 underline-offset-2 underline underline-gray-300 uppercase">
-          {pageInfo.role}
+          {pageInfo?.role}
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10 z-2">
           <span>{text}</span>

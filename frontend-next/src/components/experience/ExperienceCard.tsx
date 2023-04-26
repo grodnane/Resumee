@@ -18,26 +18,26 @@ export default function ExperienceCard({ exp }: Props) {
       />
       <div className="px-0 md:px-10">
         <h4 className="font-ligth text-2xl px-4 md:text-xl text-center">
-          {exp.role}
+          {exp?.role}
         </h4>
         <div className="flex space-x-2 my-2 justify-center">
           {exp?.technology.map((skill) => (
             <Image
-              key={skill._id}
-              src={urlForr(skill.image.asset._ref).url()}
+              key={skill?._id}
+              src={urlForr(skill?.image.asset._ref).url()}
               height={14}
               width={20}
               className="object-contain rounded-full md:h-7 md:w-10"
-              alt={skill.title}
+              alt={skill?.title}
             />
           ))}
         </div>
         <div className="flex justify-center items-center uppercase py-2">
-          started work at: {exp.dateStart} ... -{" "}
-          {exp.dateEnded ? exp.dateEnded : "present"}
+          started work at: {exp?.dateStart} ... -{" "}
+          {exp?.dateEnded ? exp.dateEnded : "present"}
         </div>
         <ul className={`${styles.ul}`}>
-          {exp.summary.map((sum) => (
+          {exp?.summary.map((sum) => (
             <li
               key={Math.random()}
               className="summary text-gray-500 text-sm md:text-lg bold text-center list-none"

@@ -27,11 +27,11 @@ export default function Projects({ projects }: Props) {
           <div
             className="w-screen flex-shrink-0 hover:overscroll-contain flex 
         snap-center flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
-            key={p._id}
+            key={p?._id}
           >
             <Image
-              src={`${urlForr(p.image.asset._ref).url()}`}
-              alt={`${p.title}`}
+              src={`${urlForr(p?.image.asset._ref).url()}`}
+              alt={`${p?.title}`}
               width={244}
               height={244}
               className="object-scale-down md:w-[450px] md:h-[300px] objet-cover"
@@ -39,18 +39,18 @@ export default function Projects({ projects }: Props) {
             <div>
               <h4>
                 <span className="">
-                  Case study {i + 1} of {projects.length}: &nbsp;
+                  Case study {i + 1} of {projects?.length}: &nbsp;
                 </span>
-                {p.title}
+                {p?.title}
               </h4>
             </div>
             <p className="text-lg text-center  md:max-w-[700px] ">
-              {p.summary}
+              {p?.summary}
             </p>
             <Link
               target="_blank"
               className="text-gray-500 tracking-wide text-lg z-20"
-              href={p.link}
+              href={p?.link}
             >
               To the page
             </Link>

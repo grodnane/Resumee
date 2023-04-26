@@ -15,10 +15,10 @@ export default function Header({ social }: Props) {
         transition={{ duration: 1.2 }}
         className="flex flex-row items-center gap-4"
       >
-        {social.map((s) => (
+        {social?.map((s) => (
           <SocialIcon
-            key={s._id}
-            url={s.url}
+            key={s?._id}
+            url={s?.url}
             fgColor="transparent"
             bgColor="gray"
             target="blank"

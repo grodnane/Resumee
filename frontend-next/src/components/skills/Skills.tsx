@@ -61,11 +61,11 @@ export default function Skills({ skills }: Props) {
           whileInView={{ opacity: 1, x: 0 }}
           className="grid grid-cols-4 gap-3 "
         >
-          {skills.slice(skills.length / 2, skills.length / 0.75).map((s) => (
+          {skills?.slice(skills?.length / 2, skills?.length / 0.75).map((s) => (
             <Image
-              key={s._id}
-              src={`${urlForr(s.image).url()}`}
-              alt={`${s.title}`}
+              key={s?._id}
+              src={`${urlForr(s?.image).url()}`}
+              alt={`${s?.title}`}
               width={96}
               height={96}
               className=" bg-gray-600 rounded-full object-scale-down  h-20 w-20 opacity-70 hover:opacity-100 p-1 m-2 border  border-gray-500 items-center justify-center md:w-40 md:h-40 transition-opacity duration-400 ease-in-out"
@@ -78,11 +78,11 @@ export default function Skills({ skills }: Props) {
           whileInView={{ opacity: 1, x: 0 }}
           className="grid grid-cols-4 gap-3   "
         >
-          {skills.slice(skills.length / 0.75, skills.length).map((s) => (
+          {skills?.slice(skills?.length / 0.75, skills?.length).map((s) => (
             <Image
-              key={s._id}
-              src={`${urlForr(s.image).url()}`}
-              alt={`${s.title}`}
+              key={s?._id}
+              src={`${urlForr(s?.image).url()}`}
+              alt={`${s?.title}`}
               width={96}
               height={96}
               className=" bg-gray-600 rounded-full object-scale-down  h-20 w-20 opacity-70 hover:opacity-100 p-1 m-2 border  border-gray-500 items-center justify-center md:w-40 md:h-40 transition-opacity duration-400 ease-in-out"

@@ -25,15 +25,15 @@ export default function About({ pageInfo }: Props) {
         className="mt-28 relative object-cover rounded-full h-40 w-40 md:h-52 md:w-52 "
         width={144}
         height={144}
-        src={urlForr(pageInfo.aboutPic.asset._ref).url()}
+        src={urlForr(pageInfo?.aboutPic.asset._ref).url()}
         alt="Gustavo Rodñane"
       />
 
       <div className="space-y-5 px-0 md:mx-10 mt-15">
         <h4 className={`${styles.heading4} md:no-underline underline`}>
-          {pageInfo.text}
+          {pageInfo?.text}
         </h4>
-        <p className="px-4 md:text-xl">{pageInfo.aobutInfo}</p>
+        <p className="px-4 md:text-xl">{pageInfo?.aobutInfo}</p>
       </div>
     </motion.div>
   );
